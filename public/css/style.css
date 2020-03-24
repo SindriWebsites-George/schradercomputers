@@ -104,11 +104,20 @@ header {
     border-bottom: .01rem solid black;
 }
 
-.generalInformation_text {
+.generalInformation_text,
+.generalInformation_text_list {
     padding-right: 1em;
     padding-left: 1em;
     font-size: 14px;
-    margin-bottom: 5rem;
+}
+
+.generalInformation_text_list_holder {
+    margin: .5rem;
+    margin-left: 1rem;
+}
+
+.generalInformation_text_list {
+    list-style: none;
 }
 
 .gg-menu {
