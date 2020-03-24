@@ -14,7 +14,7 @@
 <body>
 
     <!-- Header-->
-    <header>
+    <header id="header">
 
         <!-- Align Left for Desktop/Tablet view -->
         <div id="header--logo_desktop">
@@ -23,7 +23,7 @@
         <div id="header--logo_mobile">
             <p class="header--logo_mobile_text">Schrader Computer</p>
         </div>
-        <i class="gg-menu"></i>
+        <i class="gg-menu toggleBTN" href="javascript:void(0)" onClick="toggleNav()"></i>
         <div id="header--information_desktop">
             <!-- Align Right for Desktop/Tablet view -->
             <div id="header--information_desktop--basic">
@@ -39,6 +39,15 @@
         </div>
 
     </header>
+
+    <div class="sideBar" id="sidebar">
+
+        <p class="headerBasicInformation--mobile">(740) 251-9335</p>
+        <p class="headerBasicInformation--mobile">685 Delaware Ave Marion, OH</p>
+        <p class="headerBasicInformation--mobile"><a href="https://www.facebook.com/Schrader-Computer-769665199731661/">Our FaceBook</a>
+            <a href="#">Open a Ticket!</a></p>
+
+    </div>
 
     <main>
         <div id="highlight">
@@ -73,8 +82,7 @@
                     <li class="generalInformation_text_list">Computer Network Installation</li>
                     <li class="generalInformation_text_list">General Computer Repair Services</li>
                 </ul>
-                <p class="generalInformation_text"></p> For all your computer repair and virus removal needs, from simple to complex, call us first! We offer free pick-up and delivery in the city of Marion, OH.
-                </p>
+                <p class="generalInformation_text">For all your computer repair and virus removal needs, from simple to complex, call us first! We offer free pick-up and delivery in the city of Marion, OH.</p>
             </article>
         </div>
     </main>
@@ -95,7 +103,7 @@
     </div>
 
 </body>
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 
 </html>

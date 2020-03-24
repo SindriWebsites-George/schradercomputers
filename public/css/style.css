@@ -69,6 +69,10 @@ header {
     margin: 1rem;
 }
 
+#generalInformation {
+    margin-bottom: 4rem;
+}
+
 #highlight--img {
     background-image: url(../imgs/schrader-building.jpg);
     background-size: 300px;
@@ -78,6 +82,42 @@ header {
     position: relative;
     padding-top: 4rem;
     /* margin-top: 1rem; */
+}
+
+
+/* Sidebar navigation */
+
+.sideBar {
+    display: none;
+    background-color: #605C5B;
+    text-align: center;
+    -webkit-box-shadow: inset 0px -9px 8px -5px rgba(0, 0, 0, 0.75), inset 0px 16px 11px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -9px 8px -5px rgba(0, 0, 0, 0.75), inset 0px 16px 11px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -9px 8px -5px rgba(0, 0, 0, 0.75), inset 0px 16px 11px -9px rgba(0, 0, 0, 0.75);
+}
+
+.headerBasicInformation--mobile {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#breaker {
+    border-right: 2px solid white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.closebtn {
+    text-decoration: none;
+    color: white;
 }
 
 
