@@ -1,5 +1,6 @@
 :root {
-    --main-bg-color: #01204B;
+    /*#01204B*/
+    --main-bg-color: black;
 }
 
 * {
@@ -11,7 +12,7 @@
 header {
     background-color: var(--main-bg-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     -webkit-box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 13px 21px -7px rgba(0, 0, 0, 0.75);
@@ -23,7 +24,7 @@ header {
 }
 
 #header--logo_mobile {
-    margin: .5em;
+    margin: .7rem;
     font-size: 22px;
     color: white;
 }
@@ -53,6 +54,7 @@ header {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    margin: .5rem;
 }
 
 .headerBasicInformation {
@@ -60,6 +62,107 @@ header {
     padding-right: .5em;
     color: white;
     font-size: 13px;
+}
+
+#highlight,
+#generalInformation {
+    margin: 1rem;
+}
+
+#generalInformation {
+    margin-bottom: 4rem;
+}
+
+#highlight--img {
+    background-image: url(../imgs/schrader-building.jpg);
+    background-size: 300px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 4rem;
+    /* margin-top: 1rem; */
+}
+
+
+/* Sidebar navigation */
+
+.sideBar {
+    display: none;
+    background-color: #605C5B;
+    text-align: center;
+    -webkit-box-shadow: inset 0px -9px 8px -5px rgba(0, 0, 0, 0.75), inset 0px 16px 11px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -9px 8px -5px rgba(0, 0, 0, 0.75), inset 0px 16px 11px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -9px 8px -5px rgba(0, 0, 0, 0.75), inset 0px 16px 11px -9px rgba(0, 0, 0, 0.75);
+}
+
+.headerBasicInformation--mobile {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#breaker {
+    border-right: 2px solid white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.closebtn {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* This is done because the hours will be displayed in the hamburger menu */
+
+#highlight--hours {
+    display: none;
+}
+
+#highlight--img_title,
+#highlight--hours_title {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background: var(--main-bg-color);
+    -webkit-box-shadow: 0px -4px 8px -2px rgba(0, 0, 0, 0.99);
+    -moz-box-shadow: 0px -4px 8px -2px rgba(0, 0, 0, 0.99);
+    box-shadow: 0px -4px 8px -2px rgba(0, 0, 0, 0.99);
+}
+
+.generalInformation_title {
+    font-size: 20px;
+    padding-left: 1rem;
+    border-bottom: .01rem solid black;
+}
+
+.generalInformation_text,
+.generalInformation_text_list {
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 14px;
+}
+
+.generalInformation_text_list_holder {
+    margin: .5rem;
+    margin-left: 1rem;
+}
+
+.generalInformation_text_list {
+    list-style: none;
+}
+
+.gg-menu {
+    color: white;
+    margin: 1.7rem;
 }
 
 
@@ -117,6 +220,9 @@ header {
         border-left: 1px solid grey;
     }
     #nav_mobile {
+        display: none;
+    }
+    .gg-menu {
         display: none;
     }
 }
