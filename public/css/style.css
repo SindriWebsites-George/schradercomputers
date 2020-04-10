@@ -75,7 +75,8 @@ header {
 
 #highlight--img {
     background-image: url(../imgs/schrader-building.jpg);
-    background-size: 300px;
+    /* The size of the image works until iPad */
+    background-size: 25rem;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,13 +85,22 @@ header {
     /* margin-top: 1rem; */
 }
 
+#logo-mobile-temp {
+    width: 8rem;
+    height: 2.7rem;
+}
+
 
 /* Sidebar navigation */
 
 .sideBar {
     display: none;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
     background-color: #605C5B;
     text-align: center;
+    transition-property: all;
+    transition-duration: 5s;
     -webkit-box-shadow: inset 0px -9px 8px -5px rgba(0, 0, 0, 0.75), inset 0px 16px 11px -9px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 0px -9px 8px -5px rgba(0, 0, 0, 0.75), inset 0px 16px 11px -9px rgba(0, 0, 0, 0.75);
     box-shadow: inset 0px -9px 8px -5px rgba(0, 0, 0, 0.75), inset 0px 16px 11px -9px rgba(0, 0, 0, 0.75);
@@ -120,11 +130,11 @@ a:visited {
     color: white;
 }
 
-
-/* This is done because the hours will be displayed in the hamburger menu */
-
 #highlight--hours {
-    display: none;
+    background-color: var(--main-bg-color);
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 #highlight--img_title,
@@ -162,7 +172,12 @@ a:visited {
 
 .gg-menu {
     color: white;
-    margin: 1.7rem;
+    margin: 2rem;
+}
+
+#googleMapPortal {
+    height: 20vh;
+    width: 20vw;
 }
 
 

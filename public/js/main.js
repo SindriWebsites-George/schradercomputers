@@ -15,3 +15,8 @@ function toggleNav() {
         return open;
     }
 }
+
+// Google Map Function
+function initMap() {
+    var location =
+}
